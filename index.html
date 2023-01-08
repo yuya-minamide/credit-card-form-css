@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Card form</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/reset.css" />
+	</head>
+	<body>
+		<div class="form-container">
+			<form action="/" method="post" class="form-container">
+				<div class="front-card">
+					<div class="holder-container">
+						<input id="holder" type="text" placeholder="Holder of card" />
+					</div>
+					<div class="number-container">
+						<input id="number" type="text" minlength="16" maxlength="16" placeholder="Number of card" />
+					</div>
+					<p class="valid-thru">valid thru</p>
+					<div class="date-container">
+						<input id="month" class="date" type="text" maxlength="2" placeholder="MM" />
+						<div class="slush">/</div>
+						<input id="year" class="date" type="text" maxlength="2" placeholder="YY" />
+						<div class="logo-container">
+							<img src="./image/mastercard_icon.png" alt="master-card" />
+							<img src="./image/visa_icon.png" alt="viza-card" />
+						</div>
+					</div>
+				</div>
+
+				<div class="back-card">
+					<div class="line"></div>
+					<input id="cvc" type="text" maxlength="3" placeholder="CVC" />
+				</div>
+
+				<button id="submit" type="submit">Send</button>
+			</form>
+		</div>
+	</body>
+</html>
